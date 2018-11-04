@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ViewWiki</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <div class="jumbotron text-center">
+          <h1>ViewWiki</h1>
+          <input type="text" class="form-control input-lg" id="wikisubject" placeholder="Enter search term" />
+          <button id="wikisearch" class="btn btn-primary"><i class="fa fa-search">Search</i></button>
+        </div>
+        <div id="randomlink" class="panel">
+          <h3 class="text-center">Click logo for random entry</h3>
+          <div class="panel-body">
+          <a href="https://en.wikipedia.org/wiki/special:random" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Wikipedia-logo-v2-en.svg/2000px-Wikipedia-logo-v2-en.svg.png" class="thumbnail" id="randomImg" />
+          </a>
+          </div>
+        </div>
+        <div class="panel panel-info hidden" id="resultspanel">
+          <ul id="resultslist">
+          
+          </ul>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="viewwiki.js"></script>
+</body>
+</html>
